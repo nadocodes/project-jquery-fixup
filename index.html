@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Index</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+    function move() {
+      var elem = document.getElementById("myBar");
+      var width = 5;
+      var id = setInterval(frame, 40);
+      function frame() {
+        if (width >= 100) {
+          clearInterval(id);
+          $(document).ready(function () {
+            $(".btn1").show();
+          })
+        } else {
+          width++;
+          elem.style.width = width + '%';
+          document.getElementById("label").innerHTML = width * 1 + '%';
+        }
+      }
+    }
+  </script>
+  <script>
+    $("#gallery > div:gt(0)").hide();
+
+    setInterval(function () {
+      $('#gallery > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#gallery');
+    }, 3000);
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".btn1").click(function () {
+        $("div#container").hide();
+        $("div.page").show();
+        $("article").show();
+        $('#intro').removeAttr("loop");
+      });
+    });
+  </script>
+</head>
+
+<body onload="move()" style="background-color: black">
+  </div>
+  <div id="container">
+    <video id="intro" poster="images/bg.png" autoplay="true" loop>
+      <source src="videos/Intro.mp4" type="video/mp4">
+      <source src="videos/Intro.webm" type="video/webm">
+      Video Cannot Be Played.
+    </video>
+    <button class='btn1' type="button">Hack</button>
+  </div>
+  <div id="myProgress">
+    <div id="myBar">
+      <div id="label">10%</div>
+    </div>
+    <div class="page">
+      <img id="backdrop" src="images/bg.gif">
+      </img>
+      <a href="index.html"><img id="logo" src="images/logo.jpg"></a>
+    </div>
+    <article>
+      <header>
+        <h1> Welcome to #DEAD_$EC/ </h1>
+        <div id="timeline">
+          <a class="twitter-timeline" href="https://twitter.com/hashtag/WatchDogs2"
+            data-widget-id="809590669874491392">#WatchDogs2 Tweets</a>
+          <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+          </script>
+        </div>
+        <div id="gallery">
+          <div>
+            <img src="images/img1.jpg" height="300">
+          </div>
+          <div>
+            <img src="images/img2.jpg" height="300">
+          </div>
+          <div>
+            <img src="images/img3.jpg" height="300">
+          </div>
+          <div>
+            <img src="images/img4.jpg" height="300">
+          </div>
+          <div>
+            <img src="images/img5.jpg" height="300">
+          </div>
+          <div>
+            <img src="images/img6.jpg" height="300">
+          </div>
+        </div>
+      </header>
+      <div class="clear">
+      </div>
+      <section>
+        <h1> #J0in/u$ </h1>
+        <iframe width="920" height="540" src="https://www.youtube.com/embed/2GIVVsTKTLg" frameborder="0"
+          allowfullscreen></iframe>
+        <br>
+        <p>You will not be alone in your fight. Dedsec, an international hacker group, is fighting against all the
+          injustice our modern world has created. With the help of Marcus, Dedsec will try to pull off the biggest hacks
+          of the history, with one goal in mind: take down ctOS and all the corporations trying to control our lives.
+        </p>
+      </section>
+      <div class="clear">
+      </div>
+      <footer>
+        <p> All Rights Reserved.
+        <p>
+          <audio id="player" controls autoplay>
+            <source src="audio/3500_8bit.mp3" type="audio/mp3">
+            <source src="audio/3500_8bit.ogg" type="audio/ogg">
+            Your browser does not support the audio tag.
+          </audio>
+      </footer>
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+#backdrop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.page {
+  display: none;
+}
+
+#logo {
+  top: 50px;
+  left: 35%;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  height: 75px;
+}
+
+#timeline {
+  float: left;
+  left: 150px;
+  margin: 80px auto;
+  position: relative;
+  width: 420px;
+  height: 240px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#gallery {
+  float: right;
+  right: 165px;
+  margin: 80px auto;
+  position: relative;
+  width: 533.33px;
+  height: 300px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#gallery>div {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+article {
+  top: 250px;
+  left: 12%;
+  width: 75%;
+  margin: 0 auto;
+  position: absolute;
+  float: none;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 16px 8.5px;
+  box-shadow: 5px 8px 2px rgba(8, 4, 3, 0.05);
+}
+
+h1 {
+  text-align: center;
+  font-size: 75px;
+  margin: 0 auto;
+  color: #D10ED1;
+  font-family: 'Courier', monospace;
+}
+
+section>p {
+  font-size: 15px;
+  margin: 0 auto;
+  color: #D10ED1;
+  font-family: 'Courier', monospace;
+  padding-bottom: 10px;
+}
+
+h1:hover {
+  color: grey;
+}
+
+section>p:hover {
+  color: grey;
+}
+
+section {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+section p {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 65%;
+}
+
+#player {
+  width: 100%;
+  float: none;
+  position: relative;
+}
+
+footer {
+  font-family: 'Courier', monospace;
+  text-align: center;
+  color: grey;
+  padding: 5px;
+  padding-left: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+footer>p:hover {
+  color: #D10ED1;
+}
+
+.clear {
+  clear: both;
+}
+
+button {
+  cursor: pointer;
+  display: none;
+  border: 0px solid #000000;
+  background: #fafdff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b3b1ad), to(#fafdff));
+  background: -webkit-linear-gradient(top, rgba(171, 171, 171, 0), #fafdff);
+  background: -moz-linear-gradient(top, #b3b1ad, #fafdff);
+  background: -ms-linear-gradient(top, #b3b1ad, #fafdff);
+  background: -o-linear-gradient(top, #b3b1ad, #fafdff);
+  background-image: -ms-linear-gradient(top, #b3b1ad 0%, #fafdff 100%);
+  padding: 12.5px 25px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 0px 0;
+  -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 0px 0;
+  box-shadow: rgba(255, 255, 255, 0.4) 0 0px 0, inset rgba(255, 255, 255, 0.4) 0 0px 0;
+  text-shadow: #000000 0 1px 0;
+  color: #000000;
+  font-size: 21px;
+  font-family: helvetica, serif;
+  text-decoration: none;
+  vertical-align: middle;
+  top: 90%;
+  left: 48%;
+  position: absolute;
+}
+
+button:hover {
+  border: 0px solid #000000;
+  text-shadow: #ffffff 0 1px 0;
+  background: #d9960f;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(#3dc930));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.7), #3dc930);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.7), #3dc930);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7), #3dc930);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.7), #3dc930);
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.7) 0%, #3dc930 100%);
+  color: #ffffff;
+}
+
+button:active {
+  text-shadow: #000000 0 1px 0;
+  border: 0px solid #000000;
+  background: red;
+  color: #000000;
+}
+
+#myProgress {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#myBar {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background-color: #3dc930;
+}
+
+#label {
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}

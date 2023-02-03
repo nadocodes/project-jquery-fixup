@@ -6,50 +6,9 @@
   <title>Index</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script>
-    function move() {
-      var elem = document.getElementById("myBar");
-      var width = 5;
-      var id = setInterval(frame, 40);
-      function frame() {
-        if (width >= 100) {
-          clearInterval(id);
-          $(document).ready(function () {
-            $(".btn1").show();
-          })
-        } else {
-          width++;
-          elem.style.width = width + '%';
-          document.getElementById("label").innerHTML = width * 1 + '%';
-        }
-      }
-    }
-  </script>
-  <script>
-    $("#gallery > div:gt(0)").hide();
-
-    setInterval(function () {
-      $('#gallery > div:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo('#gallery');
-    }, 3000);
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".btn1").click(function () {
-        $("div#container").hide();
-        $("div.page").show();
-        $("article").show();
-        $('#intro').removeAttr("loop");
-      });
-    });
-  </script>
+  <script type="text/javascript" src="scripts/main.js"></script>
 </head>
-
-<body onload="move()" style="background-color: black">
+<body onload="move()">
   </div>
   <div id="container">
     <video id="intro" poster="images/bg.png" autoplay="true" loop>

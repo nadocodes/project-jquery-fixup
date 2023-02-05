@@ -33,15 +33,15 @@ setInterval(function () {
 $(document).ready(function () {
   $(".btn1").click(function () {
     $("div#container").hide();
-    $("div.page").show();
+    $("div.page").css('display', 'flex');
     $("article").show();
-    $("#intro").removeAttr("loop");
+    $("#myProgress").hide();
   });
 });
 
 // onload volume
 jQuery(function($) {
-    $("#player").prop("volume", 0.5);
+    $("#player").prop("volume", 0.1);
 
     window.setVolume = function(player, vol) {
         sounds[player].volume = vol;

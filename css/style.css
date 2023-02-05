@@ -32,16 +32,20 @@ video {
 
 .page {
   display: none;
+  justify-content: center;
+}
+
+.page a {
+  display: flex;
+  justify-content: center;
 }
 
 #logo {
-  top: 50px;
-  left: 35%;
   position: absolute;
-  margin: 0 auto;
-  padding: 0;
   height: 75px;
+  top: 4.375rem;
 }
+
 
 #timeline {
   float: left;

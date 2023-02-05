@@ -32,7 +32,7 @@ setInterval(function () {
 // show button
 $(document).ready(function () {
   $(".btn1").click(function () {
-    $("div#container").hide();
+    $("div#btn-container").hide();
     $("div.logo").css('display', 'flex');
     $("article").show();
     $("#myProgress").hide();

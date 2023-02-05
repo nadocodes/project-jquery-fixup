@@ -26,23 +26,21 @@ video {
   transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
 }
 
-.page {
+.logo {
   display: none;
   justify-content: center;
 }
 
-.page a {
+.logo a {
   display: flex;
   justify-content: center;
 }
 
 #logo {
   position: absolute;
-  height: 75px;
+  height: 4.6875rem;
   top: 4.375rem;
 }
 
@@ -69,7 +67,7 @@ video {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-#gallery>div {
+#gallery > div {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -79,11 +77,9 @@ video {
 
 article {
   top: 250px;
-  left: 12%;
   width: 75%;
   margin: 0 auto;
-  position: absolute;
-  float: none;
+  position: relative;
   display: none;
   background-color: rgba(0, 0, 0, 0.45);
   border-radius: 16px 8.5px;
@@ -92,14 +88,15 @@ article {
 
 h1 {
   text-align: center;
-  font-size: 75px;
+  font-size: 4.6875rem;
   margin: 0 auto;
   color: #D10ED1;
   font-family: 'Courier', monospace;
+  padding: 1.25rem;
 }
 
-section>p {
-  font-size: 15px;
+section > p {
+  line-height: 1.5;
   margin: 0 auto;
   color: #D10ED1;
   font-family: 'Courier', monospace;
@@ -110,7 +107,7 @@ h1:hover {
   color: grey;
 }
 
-section>p:hover {
+section > p:hover {
   color: grey;
 }
 
@@ -143,7 +140,7 @@ footer {
   position: relative;
 }
 
-footer>p:hover {
+footer > p:hover {
   color: #D10ED1;
 }
 
@@ -155,13 +152,10 @@ button {
   cursor: pointer;
   display: none;
   border: 0px solid #000000;
-  background: #fafdff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#b3b1ad), to(#fafdff));
   background: -webkit-linear-gradient(top, rgba(171, 171, 171, 0), #fafdff);
   background: -moz-linear-gradient(top, #b3b1ad, #fafdff);
   background: -ms-linear-gradient(top, #b3b1ad, #fafdff);
   background: -o-linear-gradient(top, #b3b1ad, #fafdff);
-  background-image: -ms-linear-gradient(top, #b3b1ad 0%, #fafdff 100%);
   padding: 12.5px 25px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -196,8 +190,11 @@ button:hover {
 button:active {
   text-shadow: #000000 0 1px 0;
   border: 0px solid #000000;
-  background: red;
-  color: #000000;
+  background: -webkit-linear-gradient(top, rgba(171, 171, 171, 0), red);
+  background: -moz-linear-gradient(top, #b3b1ad, red);
+  background: -ms-linear-gradient(top, #b3b1ad, red);
+  background: -o-linear-gradient(top, #b3b1ad, red);
+  color: #ffffff;
 }
 
 #myProgress {

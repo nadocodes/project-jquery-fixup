@@ -33,7 +33,7 @@ setInterval(function () {
 $(document).ready(function () {
   $(".btn1").click(function () {
     $("div#container").hide();
-    $("div.page").css('display', 'flex');
+    $("div.logo").css('display', 'flex');
     $("article").show();
     $("#myProgress").hide();
   });

@@ -181,10 +181,8 @@ button {
   font-size: 21px;
   font-family: helvetica, serif;
   text-decoration: none;
-  vertical-align: middle;
-  top: 90%;
-  left: 48%;
-  position: absolute;
+  position: relative;
+  margin: 600px auto;
 }
 
 button:hover {

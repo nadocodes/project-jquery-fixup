@@ -181,8 +181,13 @@ button {
   font-size: 21px;
   font-family: helvetica, serif;
   text-decoration: none;
-  position: relative;
-  margin: 600px auto;
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
 }
 
 button:hover {

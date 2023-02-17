@@ -6,7 +6,7 @@ html {
 }
 
 body {
-background-color: black
+  background-color: black
 }
 
 #backdrop {
@@ -35,15 +35,17 @@ background-color: black
 }
 
 .container {
-  margin: 1.5rem;
+  margin: 0.5rem;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  gap: 1.0rem;
 }
 
-#gallery, #timeline {
+#gallery,
+#timeline {
   position: relative;
   width: 33.4375rem;
   height: 18.75rem;
@@ -51,7 +53,7 @@ background-color: black
   box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.4);
 }
 
-#gallery > div {
+#gallery>div {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -85,14 +87,15 @@ h2 {
   padding: 1.25rem;
 }
 
-section > p {
+section>p {
   line-height: 1.5;
   margin: 0 auto;
   color: #D10ED1;
   padding-bottom: 0.625rem;
 }
 
-h1:hover, h2:hover {
+h1:hover,
+h2:hover {
   color: #ffffff;
 }
 
@@ -110,7 +113,7 @@ iframe {
   border: 0;
 }
 
-section > p:hover {
+section>p:hover {
   color: #ffffff;
 }
 
@@ -143,7 +146,7 @@ footer {
   position: relative;
 }
 
-footer > p:hover {
+footer>p:hover {
   color: #D10ED1;
 }
 
@@ -219,59 +222,73 @@ button:active {
 }
 
 @media screen and (max-width: 1024px) {
-    article {
-        width: 100%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: 0;
-        box-shadow: none;
-    }
-    h1 {
-        font-size: 3.5rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    section > p {
-        width: 90%;
-        padding: 2px;
-    }
-    section {
-        width: 100%;
-        padding: 0;
-    }
-    .yt-vid{
-        width: 100%;
-        height: 56.25vw;
-    }
+  article {
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  section>p {
+    width: 90%;
+    padding: 2px;
+  }
+
+  section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .yt-vid {
+    width: 100%;
+    height: 56.25vw;
+  }
 }
 
 @media screen and (max-width: 425px) {
-    #logo {
-        height: 3rem;
-    }
-    article {
-      top: 11rem;
-    }
-    #gallery img {
-      width: 100%;
-      height: 56.25vw;
+  #logo {
+    height: 2rem;
+    top: 3rem;
+  }
+
+  article {
+    top: 11rem;
+  }
+
+  #gallery img {
+    width: 100%;
+    height: 56.25vw;
+  }
+
+  #gallery {
+    height: 15rem;
   }
 }
 
 @media screen and (max-width: 375px) {
-  #logo {
-      height: 2.5rem;
-      top: 3rem;
-  }
   article {
     top: 8rem;
   }
+
   h1 {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
+
   h2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  #gallery {
+    height: 12rem;
   }
 }

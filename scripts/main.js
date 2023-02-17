@@ -1,19 +1,17 @@
 // loading bar
-function move() {
-  var elem = document.getElementById("myBar");
-  var width = 5;
-  var id = setInterval(frame, 15);
-  function frame() {
-    if (width >= 100) {
-      clearInterval(id);
-      $(document).ready(function () {
-        $(".btn1").show();
-      });
-    } else {
-      width++;
-      elem.style.width = width + "%";
-      document.getElementById("label").innerHTML = width * 1 + "%";
-    }
+var elem = document.getElementById("myBar");
+var width = 5;
+var id = setInterval(frame, 15);
+function frame() {
+  if (width >= 100) {
+    clearInterval(id);
+    $(document).ready(function () {
+      $(".btn1").show();
+    });
+  } else {
+    width++;
+    elem.style.width = width + "%";
+    document.getElementById("label").innerHTML = width * 1 + "%";
   }
 }
 

@@ -45,7 +45,7 @@ body {
 }
 
 #gallery,
-#timeline {
+#preview {
   position: relative;
   width: 33.4375rem;
   height: 18.75rem;
@@ -255,10 +255,10 @@ button:active {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
   #logo {
     height: 2rem;
-    top: 3rem;
+    top: 4rem;
   }
 
   article {
